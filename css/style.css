@@ -1,0 +1,445 @@
+:root {
+    --grey: #dddddd;
+    --grey-shadow: #acacac;
+    --default-padding: 20px 20px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("./fonts/Nunito-Regular.ttf");
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Nunito';
+
+
+}
+
+header {
+    display: flex;
+    background: #041d64;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+header .logo {
+    color: white;
+    font-weight: 600;
+    font-size: 35px;
+
+}
+
+span {
+    color: rgb(72, 195, 243);
+}
+
+header ul {
+
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header ul li {
+    margin: 0px 20px;
+
+}
+
+header ul li a {
+    color: white;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 2em;
+    background: #f5f4f4;
+
+}
+
+main .btn {
+    border-radius: 20px;
+    padding: var(--default-padding);
+    border: none;
+    cursor: pointer;
+    background: skyblue;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 2px 5px 20px 5px rgba(0, 0, 0, 0.199);
+    transition: 0.4s;
+}
+
+main .btn:hover {
+    background: rgb(1, 112, 156);
+    color: white;
+}
+
+footer {
+
+    background: rgb(59, 56, 56);
+    flex-flow: column wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(252, 252, 252);
+    padding: 10px 30px;
+}
+
+footer a {
+    color: white;
+
+}
+
+/* *********APP********* */
+form {
+
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-flow: column wrap;
+    gap: 2em;
+    padding: var(--default-padding);
+
+}
+
+.group-medoc {
+    box-shadow: 0px 0px 10px 1px #00000050;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: var(--default-padding);
+    border-radius: 20px;
+    background: rgb(249, 252, 253);
+}
+
+form .group-medoc,
+.group-medoc-medoc {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+form .group-medoc .medoc {
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.labelGroup {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2em;
+    font-weight: 600;
+}
+
+form .group-medoc .medoc .inputGroup {
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 20px;
+    overflow: hidden;
+    gap: 2px;
+}
+
+form .group-medoc .medoc .inputGroup input {
+    border: none;
+    background: #a2cefa;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    width: 80px;
+    height: 70px;
+    outline: none;
+}
+
+#plus {
+    cursor: pointer;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.abon {
+    display: flex;
+
+
+
+
+    background-color: #041d64;
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    transition: 0.4s;
+
+}
+
+.abon:hover {
+    background-color: #0c36a8;
+    color: rgb(209, 216, 221);
+
+
+}
+
+
+/* *****POP UP RESULTAT ***** */
+.resultat {
+    z-index: 100;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 2em;
+    padding: 10px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px #00000050;
+    background: rgb(249, 252, 253);
+}
+
+.resultat .polynome {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 2em;
+    width: 100%;
+    padding: var(--default-padding);
+    border-bottom: 1px solid var(--grey);
+}
+
+.resultat .polynome #poli {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--grey-shadow);
+    border-radius: 5px;
+    padding: var(--default-padding);
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 30px;
+}
+
+.resultat .group-test {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: var(--default-padding);
+    gap: 2em;
+}
+
+.resultat .group-test .test {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 1em;
+}
+
+.resultat .group-test .test form {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+
+.resultat .group-test .test form input[type="number"] {
+    text-align: center;
+    border: 1px solid var(--grey-shadow);
+    border-radius: 5px;
+    padding: var(--default-padding);
+    width: 100px;
+    height: 30px;
+}
+
+.resultat .group-test .test #res-test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--grey-shadow);
+    border-radius: 5px;
+    padding: var(--default-padding);
+    margin-right: 30px;
+    flex-flow: column nowrap;
+    width: 100px;
+    height: 30px;
+}
+
+.resultat .group-test .test form input[type="submit"] {
+    border: none;
+    border-radius: 50%;
+
+}
+
+/* SOLUTION*/
+#solution {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    padding: 20px 20px;
+
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: white;
+    font-weight: 500;
+    z-index: 1000;
+}
+
+.container img {
+    margin-left: 90%;
+    margin-top: 5px;
+}
+
+.input-box {
+    position: relative;
+    margin: 25px 0;
+}
+
+.input-box .myOutput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 2px solid #0c36a8;
+    outline: none;
+    border-radius: 40px;
+    color: rgb(59, 56, 56);
+    font-size: 1em;
+    padding: 20px;
+
+}
+
+
+
+.input-box label {
+    position: absolute;
+    top: 1px;
+    ;
+    left: 29px;
+    transform: translateY(-50%);
+    font-size: .8em;
+    background: white;
+    padding: 0 6px;
+    padding: 0 6px;
+    color: #0c36a8;
+    pointer-events: none;
+
+}
+
+.sepa {
+    width: 90%;
+    background: #0c36a8;
+    margin-left: 20px;
+    height: 5px;
+    border-radius: 2px;
+}
+
+.mytext {
+    margin: 10px;
+}
+
+.myP {
+    font-size: 30px;
+}
+
+#pointTest {
+    margin-top: -20px;
+    
+}
+
+#pointTest input {
+    border: none;
+    width: 60px;
+    outline: none;
+    color: rgb(59, 56, 56);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+text-align: center;
+
+
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+text-align: center;
+}
+
+#myFerm {
+    cursor: pointer;
+}
+#pointTest p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pointTest button {
+    border: none;
+    padding: 10px 18px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    background: #a2cefa;
+    margin: 5px;
+    transition: 0.5s
+}
+
+#pointTest button:hover {
+    background-color: #0c36a8d3;
+    color: rgb(209, 216, 221);
+
+
+}
+
+.myFx {
+    color: rgb(59, 56, 56);
+    border-bottom: 2px solid #0c36a8;
+    width: auto;
+}
+
+#dark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0c36a875;
+}
+
+.cacher {
+    display: none;
+}

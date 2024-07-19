@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ce site permet de calculer l'interpolation de Newton, il a été conçu par un groupe d'étudiants de l'Univesité Protestante au Congo"/>
+    <meta name="author" content="PrimeCity | 2024 Tout droit réservés" />
+    <title>My Intrerpol Newton</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+   </head>
+
+<body>
+    <div id="dark" class="cacher"></div>
+    <script src="../lib/jquery.js"></script>
+    <header>
+        <div class="logo">
+            M<span>IN</span>
+        </div>
+
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">A propos</a></li>
+        </ul>
+
+    </header>
+    <main>
+
+        <form >
+            <div class="group-medoc">
+                <div class="group-medoc-medoc">
+                    <div class="labelGroup">
+                        <label for="x">x</label><label for="fx">fx</label>
+                    </div>
+                    <div class="medoc">
+
+                        <div class="inputGroup">
+                            <input type="number" class="x" required>
+                            <input type="number" class="fx" required>
+                        </div>
+
+                    </div>
+                    <div class="medoc">
+
+                        <div class="inputGroup">
+                            <input type="number" class="x" required>
+                            <input type="number" class="fx" required>
+                        </div>
+
+                    </div>
+                    <div class="medoc">
+
+                        <div class="inputGroup">
+                            <input type="number" class="x" required>
+                            <input type="number" class="fx" required>
+                        </div>
+
+                    </div>
+                    <div class="medoc">
+
+                        <div class="inputGroup">
+                            <input type="number" class="x" required>
+                            <input type="number" class="fx" required>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="add">
+                    <div class="abon">
+                        <label for="plus" id="plus">+</label>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Trouver le Polynome" id="submit" class="btn">
+        </form>
+        
+        <div id="solution" class="cacher">
+             <div class="container">
+                 <img  id="myFerm" src="../images/bx-x.svg" alt="srt">
+                    <div class="input-box">
+                        <div class="myOutput">XXXXXXXXXXXX</div>
+                        <label class="LAB">Polynome</label>
+                    </div>
+
+                    <div class="sepa"></div>
+                    <P class="mytext">Testez pour une valeur de X</P>
+                    <form action="" id="pointTest">
+                        
+                    <p><span class="myP">P</span>( <input type="number" class="xi">  ) <button id="valeurPoint">=</button> 
+                         <span class="myFx center">XXXX</span></p>
+                    </form>
+                   
+               
+             </div>
+        </div>
+
+    </main>
+    <footer>
+        <h3>Contactez-nous</h3>
+
+        <a href="mailto:jellymaweja7@gmail.com">PrimeCity</a>
+        <br>
+        <p>&copy; 2024| <strong>PrimeCity</strong></p>
+    </footer>
+</body>
+
+<script src="../js/script.js"></script>
+</html>
