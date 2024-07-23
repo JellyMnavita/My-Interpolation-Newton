@@ -177,7 +177,7 @@ form .group-medoc .medoc .inputGroup input {
 }
 
 form .group-medoc .medoc .inputGroup input::placeholder{
-    color:#e4eaf5;}
+    color:##c2c2c2;}
 #plus {
     cursor: pointer;
     width: 100%;
