@@ -100,8 +100,8 @@ fermeture.click(function () {
 $('#plus').click(function () {
     let medoc = '<div class="medoc">' +
     '<div class="inputGroup">' +
-    '<input type="text" class="x" required>' +
-    '<input type="text" class="fx" required>' +
+    '<input type="text" class="x" placeholder="x" required>' +
+    '<input type="text" class="fx" placeholder="fx" required>' +
     '</div>' +
     '</div>';
 
