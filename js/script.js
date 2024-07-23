@@ -14,7 +14,7 @@ function polynome() {
     form.append("fx", fx);
     form.append('typeOP', 'polynome');
     var settings = {
-        "url": "http://myinterpolenewton.atwebpages.com/index.php",
+        "url": "http://myinterpolenewton.atwebpages.com",
         "method": "POST",
         "timeout": 0,
         "processData": false,
@@ -47,7 +47,7 @@ function valeurPoint() {
     form.append("xi", xi);
     form.append('typeOP', 'valeur');
     var settings = {
-        "url": "http://localhost/Examen%20Analyse%20Num/php/traitement.php",
+        "url": "http://myinterpolenewton.atwebpages.com",
         "method": "POST",
         "timeout": 0,
         "processData": false,
