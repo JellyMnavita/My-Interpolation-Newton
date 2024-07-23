@@ -176,6 +176,8 @@ form .group-medoc .medoc .inputGroup input {
     outline: none;
 }
 
+form .group-medoc .medoc .inputGroup input::placeholder{
+    color:grey;}
 #plus {
     cursor: pointer;
     width: 100%;
