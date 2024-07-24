@@ -14,7 +14,7 @@ function polynome() {
     form.append("fx", fx);
     form.append('typeOP', 'polynome');
     var settings = {
-        "url": "https://dreamcoder.aifedasbl.de/",
+        "url": "https://dreamcoder.aifedasbl.de/traitmyinterpole/index.php",
         "method": "POST",
         "timeout": 0,
         "processData": false,
@@ -47,7 +47,7 @@ function valeurPoint() {
     form.append("xi", xi);
     form.append('typeOP', 'valeur');
     var settings = {
-        "url": "https://dreamcoder.aifedasbl.de/",
+        "url": "https://dreamcoder.aifedasbl.de/traitmyinterpole/index.php",
         "method": "POST",
         "timeout": 0,
         "processData": false,
